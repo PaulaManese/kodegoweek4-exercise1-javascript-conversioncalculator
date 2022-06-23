@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 | Javascript | Conversion Exercises </title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <form action="#" method="">
+        <h1>WEIGHT CONVERSION</h1>
+        <h2>Please enter a value in Kilograms</h2>
+        <p>This table convert kilograms:
+            <ul>
+                <li>Pounds:</li>
+                <li>Oz</li>
+                <li>Grams</li>
+                <li>Milligrams</li>
+                <li>Stone</li>           
+            </ul>
+        </p>
+        <input type="number" id="kilo" placeholder="Please enter a value in kilograms">    
+        <button  onclick="computeWeight()">Please enter a value in kilograms</button>
+        <h1 id="pou"></h1>
+        <h1 id="oz"></h1>
+        <h1 id="gra"></h1>
+        <h1 id="milig"></h1>
+        <h1 id="sto"></h1>
+           
+            <script>
+                function computeWeight() {
+                    let x = document.getElementById('kilo').value;
+                    let pounds = parseFloat(x) * 2.2046;
+                    let ozz =    parseFloat(x) * 35.274;
+                    let grams =  parseFloat(x) * 1000;
+                    let mg = parseFloat(x) * 1000000;
+                    let stone =  parseFloat(x) * 0.1574;
+
+                    document.getElementById('pou').innerHTML = pounds + " " + "Pounds";
+                    document.getElementById('oz').innerHTML = ozz + " " + "Oz";
+                    document.getElementById('gra').innerHTML = grams + " " + "Grams";
+                    document.getElementById('milig').innerHTML = grams + " " + "Milligrams";
+                    document.getElementById('sto').innerHTML = stone + " " +  "Stone";        
+                }
+            </script>
+
+    </form>
+</body>
+</html>
