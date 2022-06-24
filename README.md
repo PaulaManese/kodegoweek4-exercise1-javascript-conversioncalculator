@@ -8,7 +8,7 @@
 View demo: 
 
 ```bash
-https://recreated-the-worlds-first-website.netlify.app/
+https://paulamanese.github.io/kodegoweek4-exercise1-javascript-conversioncalculator/
 ```
 
 ## Technical Specifications:
