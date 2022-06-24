@@ -1,4 +1,3 @@
-# kodegoweek4-exercise1-javascript-conversioncalculator
 
 # Kodegoweek4-exercise1-javascript-conversioncalculator
 # CONVERSION CALCULATOR
